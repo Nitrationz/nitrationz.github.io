@@ -3,30 +3,80 @@
 <html lang="en">
 
 <head>
+<link rel="icon" type="image/png" href="webicon.png">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+<meta keywords="Profile, Flex,">
 <link rel="stylesheet" href="style.css">
 <script src="script.js"></script>
-<title>Nitrationz</title>
+<title>Nitration</title>
 </head>
 
 <body>
 
 <div class="top-buttons">
-      <a href="https://nitrationz.github.io" class="home-button">Home</a>
+      <a href="https://nitration.xyz" class="home-button">Home</a>
       <a href="https://discord.gg/WqtX3cEx4y" class="discord-button">Discord</a>
-      <a href="https://nitrationz.github.io" class="about_me-button">About Me</a>
+      <a href="about.html" class="about_me-button">About Me</a>
 </div>
-
-
-
-<div class="container">
 
 <h1>Nitration</h1>
-<h2>Full fledged Programer</h2>
-<p>Hello there</p>
 
+<!-- Modal Trigger -->
+<a href="#" onclick="toggleModal()" class="my_hobbies-button">My hobbies </a>
+
+<!-- Modal -->
+<div id="hobbyModal" style="display:none;">
+  <div class="modal-content">
+    <h2>My Hobbies</h2>
+    <ul>
+      <li>Playing Chess [1800 elo]</li>
+      <li>Binge-Watching YouTube</li>
+      <li>Hustling</li>
+      <li>Playing games</li>
+    </ul>
+    <button onclick="toggleModal()">Close</button>
+  </div>
 </div>
 
+<!-- Skills Section -->
+<div class="container">
+  <h2>Skills</h2>
+  <ul style="list-style: none; padding: 0;">
+    <li>💻 HTML, CSS, JavaScript and Python</li>
+    <li>🎨 UI/UX Design</li>
+    <li>⚡ Automation & Scripting</li>
+    <li>🌐 Web Development</li>
+    <li>🛠️ Vibe Coder</li>
+  </ul>
+</div>
+
+<!-- Projects Section -->
+<div class="container">
+  <h2>Projects</h2>
+  <ul style="list-style: none; padding: 0;">
+    <li>
+      <strong>Personal Portfolio</strong> – <a href="https://nitrationz.github.io" target="_blank" style="color:#60a5fa;">View</a>
+      <br>
+      <span style="font-size: 0.95em; color: #94a3b8;">A showcase of my work and skills.</span>
+    </li>
+    <li>
+      <strong>Discord Community</strong> – <a href="https://discord.gg/WqtX3cEx4y" target="_blank" style="color:#60a5fa;">Join</a>
+      <br>
+      <span style="font-size: 0.95em; color: #94a3b8;">A place for tech enthusiasts and creators.</span>
+    </li>
+  </ul>
+</div>
+
+<!-- Contact Section -->
+<div class="container">
+  <h2>Contact Info</h2>
+  <p>Collab with me cause im bored :]</p>
+  <ul style="list-style: none; padding: 0;">
+    <li>Email: <a href="mailto:nitrationz@gmail.com" style="color:#60a5fa;">dilitabletenis@gmail.com</a></li>
+    <li>Discord: <span style="color:#60a5fa;">@nitration</span></li>
+  </ul>
+</div>
 </body>
 
 </html>

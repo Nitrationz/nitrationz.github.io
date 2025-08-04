@@ -1,46 +1,159 @@
-h1{
-    font-size: 48px;
-    color: grey;
-    text-shadow: 2px 2px 4px #000000;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
-}
-p, h2{
-    color:grey;
-
-}
-
-body{
-    text-align: left;
-    font-family: sans-serif;
-    color: #080b12;
-    background-color: #080b12;
-    box-shadow: #071c68 ;
-}
-.home-button, .discord-button, .about_me-button{
-   color: grey;
-   display: inline-block;
-   padding: 20px;
-   background-color: transparent;
-   text-decoration: none;
-   text-shadow: 2px 2px 4px #071c68;
-   font-size: 20px;
-   border-radius: 10px;
-   margin-right: 25px;
-
-}
-.top-bottons{
-    top: 20%;
-    left:20%;
-    position:absolute;
-    
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  background: linear-gradient(120deg, #0f172a 0%, #1e293b 100%);
+  margin: 0;
+  padding: 0;
+  color: #e0e7ef;
 }
 
-.discord-button:hover, .home-button:hover, .about_me-button:hover {
-       color:#0f2577;
+.top-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 2rem;
+  margin-left: 2rem;
 }
+
+.top-buttons a {
+  padding: 0.6em 1.4em;
+  border-radius: 30px;
+  background: #2563eb;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(37,99,235,0.08);
+}
+
+.top-buttons a:hover {
+  background: #1e40af;
+  box-shadow: 0 4px 16px rgba(37,99,235,0.15);
+}
+
+h1 {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  color: #60a5fa;
+}
+
+.my_hobbies-button {
+  display: block;
+  margin: 2rem auto;
+  padding: 0.5em 1.2em;
+  background: #0ea5e9;
+  color: #fff;
+  border-radius: 25px;
+  text-align: center;
+  width: fit-content;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s;
+  box-shadow: 0 2px 8px rgba(14,165,233,0.08);
+}
+
+.my_hobbies-button:hover {
+  background: #0369a1;
+}
+
+#hobbyModal {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(15, 23, 42, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+#hobbyModal[style*="display:none"] {
+  display: none !important;
+}
+
+.modal-content {
+  background: #1e293b;
+  border-radius: 18px;
+  padding: 2rem 2.5rem;
+  box-shadow: 0 8px 32px rgba(30,41,59,0.28);
+  text-align: center;
+  min-width: 300px;
+  max-width: 90vw;
+  animation: fadeIn 0.3s;
+  color: #e0e7ef;
+}
+
+@keyframes fadeIn {
+  from { transform: scale(0.95); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.modal-content button {
+  margin-top: 1.5rem;
+  padding: 0.5em 1.2em;
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.modal-content button:hover {
+  background: #1e40af;
+}
+
 .container {
-    position: absolute;
-    top: 20%;
-    left: 10%;
-    transform: translate(-50%, -50%);
+  background: #334155;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(30,41,59,0.18);
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  text-align: center;
+  color: #e0e7ef;
+}
+
+.container h2 {
+  color: #60a5fa;
+  margin-bottom: 1rem;
+}
+
+.container ul {
+  margin: 0 auto 1rem auto;
+  padding: 0;
+  list-style: none;
+}
+
+.container li {
+  margin: 0.5em 0;
+  font-size: 1.1em;
+  color: #e0e7ef;
+}
+
+.container a {
+  color: #38bdf8;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.container a:hover {
+  color: #60a5fa;
+}
+
+.container span {
+  color: #94a3b8;
+}
+
+@media (max-width: 600px) {
+  .container, .modal-content {
+    padding: 1rem;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
 }
